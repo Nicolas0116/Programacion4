@@ -1,0 +1,115 @@
+<html lang="es">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citas Dentista</title> 
+  
+</head>
+<body>
+  <div id="bloque1" class="container-xxl">
+    <div class="row">
+      <div id="container" class="col-md-6">
+        <form  method="POST">
+          <div id ="forma" class="mb-3">
+		    <label id="documento" for="documento" class="form-label"><strong>Documento:</strong></label>
+            <input type="text" class="form-control" name="documento" id="documento" placeholder="Ingrese su Documento"></br>
+            <label id="nombre" for="nombre" class="form-label"><strong>Nombre:</strong></label>
+            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese su Nombre"></br>
+			<label id="telefono" for="telefono" class="form-label"><strong>Telefono:</strong></label>
+            <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Ingrese su Telefono"></br>
+            <label id="fecha" for="fecha" class="form-label"><strong>Fecha:</strong></label>
+            <input type="date" class="form-control" id="fecha" name="fecha"></br>
+            <label id="hora" for="hora" class="form-label"><strong>Hora:</strong></label>
+            <input type="time" class="form-control" id="hora" name="hora"
+                  min="08:00" max="17:30" required>
+            <small id="texto">El horario para citas es de 8:00 a.m. a 5:30 p.m. </small></br></br>
+            <button id="boton" class="btn btn-primary btn-lg" type="submit" > <strong>AGENDAR</strong> </button>
+          </div>
+        </form>
+      </div>
+    </div>
+</div>
+<a id="boton1" href="/citas" > <strong>Ver Citas</strong> </a>
+</body>
+<style >
+#boton{
+		display: inline-block;
+        padding: 13px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        background-color: #72ADED;
+        border-radius: 6px;
+        outline: none;
+  }
+  #bloque{
+    width: max-content;
+    margin-top: 200px;
+    margin-bottom: 10px;
+	background: grey;
+
+  }
+  #forma{
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    padding: 20px;
+    color: #000000;
+    font-size: 22px;
+	width: 50%;
+  }
+  #imagen{
+    overflow:hidden;
+  }
+  img{
+    height: 700px;
+    border-radius: 50px;
+  }
+  #container{
+    align-items: center;
+  }
+  #nombre{
+    padding-top: 5px;
+    padding-bottom: 5px;
+	width: 250px;
+  }
+  #documento{
+    padding-top: 5px;
+    padding-bottom: 5px;
+	width: 250px;
+
+  }
+  #telefono{
+    padding-top: 5px;
+    padding-bottom: 5px;
+	width: 250px;
+
+  }
+  #fecha{
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+
+  }
+  #hora{
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+  }
+  #texto{
+    margin-top: 5px;
+  }
+  #boton1 {
+        display: inline-block;
+        padding: 10px 23px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        background-color: #72ADED;
+        border-radius: 6px;
+		border-color: black;
+        outline: none;
+		margin-left: 20px;
+      }
+</style>
+</html>

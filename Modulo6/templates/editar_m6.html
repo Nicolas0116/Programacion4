@@ -1,0 +1,43 @@
+<html lang="en">
+<nav class="navbar navbar-expand-lg bg-light bg-opacity-75">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<body>
+<h1 style="position: relative; top: 5px; color: black; text-align: left;">Editar Palabra</h1>
+<br>
+<div class="container-sm">
+    <form action=""  method="POST">
+            {% if message %}
+            <div class="alert alert-primary" role="alert">
+                la palabra no existe
+                <button style="float:right" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+                {% endif %} {% if message == False %}
+                <div class="alert alert-primary" role="alert">
+                La palabra se actualizo correctamente
+                <button style="float:right" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endif %}
+          <div class="mb-3">
+            <label for="vpa" class="form-label"><strong>Palabra para Editar:</strong></label>
+            <input type="text" class="form-control" name="vpa" id="vpa" placeholder="Ingrese palabra para Editar" />
+          </div>
+          <div class="mb-3">
+            <label for="pa" class="form-label"><strong>Palabra Nueva:</strong></label>
+            <input type="text" class="form-control" name="pa" id="pa" placeholder="Ingrese nueva Palabra" />
+          </div>
+            <div class="d-grid gap-2">
+                <button onclick="(e) => e.preventDefault()" type="submit" class="btn btn-success mb-3">Editar</button>
+            </div>
+      </form>
+</div>
+</body>
+</html>
